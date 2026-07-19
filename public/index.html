@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Harsh Deshpande | Data Engineer/Analytics &amp; Software Developer</title>
+  <title>Harsh Deshpande | Software Developer &amp; Data Engineer / Analytics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/>
   <style>
@@ -136,6 +136,24 @@
     .proj-techs { display:flex; flex-wrap:wrap; gap:10px; }
     .proj-techs span { font-family:var(--mono); font-size:.75rem; color:var(--muted); }
 
+    /* EXPERIENCE */
+    #experience { background:var(--bg); }
+    .exp-timeline { position:relative; max-width:760px; }
+    .exp-card {
+      background:var(--surface); border:1px solid var(--border); border-radius:10px;
+      padding:28px 32px; position:relative; transition:border-color .25s,transform .25s;
+    }
+    .exp-card:hover { border-color:var(--teal); transform:translateY(-3px); }
+    .exp-top { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; align-items:baseline; margin-bottom:6px; }
+    .exp-role { font-size:1.1rem; font-weight:700; }
+    .exp-date { font-family:var(--mono); font-size:.78rem; color:var(--teal); }
+    .exp-company { color:var(--teal); font-size:.92rem; margin-bottom:16px; }
+    .exp-hl { list-style:none; margin-bottom:16px; }
+    .exp-hl li { font-size:.9rem; color:var(--muted); padding:4px 0; display:flex; align-items:flex-start; gap:8px; }
+    .exp-hl li::before { content:'▹'; color:var(--teal); flex-shrink:0; }
+    .exp-techs { display:flex; flex-wrap:wrap; gap:8px; }
+    .exp-techs span { font-family:var(--mono); font-size:.72rem; background:var(--surface2); border:1px solid var(--border); color:var(--muted); padding:4px 10px; border-radius:4px; }
+
     /* PRESENTATIONS */
     #presentations { background:var(--bg); }
     .pres-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:24px; }
@@ -203,9 +221,10 @@
       <li><a href="#about"><b>01.</b> About</a></li>
       <li><a href="#skills"><b>02.</b> Skills</a></li>
       <li><a href="#projects"><b>03.</b> Projects</a></li>
-      <li><a href="#presentations"><b>04.</b> Talks</a></li>
-      <li><a href="#education"><b>05.</b> Education</a></li>
-      <li><a href="#contact"><b>06.</b> Contact</a></li>
+      <li><a href="#experience"><b>04.</b> Experience</a></li>
+      <li><a href="#presentations"><b>05.</b> Talks</a></li>
+      <li><a href="#education"><b>06.</b> Education</a></li>
+      <li><a href="#contact"><b>07.</b> Contact</a></li>
       <li><a class="btn-resume" href="./resume.pdf" target="_blank">Resume ↗</a></li>
     </ul>
   </nav>
@@ -216,7 +235,7 @@
     <div class="hero-inner">
       <div class="hero-tag">Hi, my name is</div>
       <h1 class="hero-name">Harsh<br><span class="hl">Deshpande.</span></h1>
-      <h2 class="hero-role">Data Engineer &amp; Analytics Developer</h2>
+      <h2 class="hero-role">Software Developer &amp; Data Engineer / Analytics</h2>
       <p class="hero-desc">
         I build data pipelines, analytics dashboards, and AI-powered applications
         that transform raw data into actionable insights. Currently pursuing MSc CS
@@ -267,7 +286,7 @@
         </div>
       </div>
       <div>
-        <div class="stat-box"><div class="stat-num">3+</div><div class="stat-label">Real-world projects shipped</div></div>
+        <div class="stat-box"><div class="stat-num">4+</div><div class="stat-label">Real-world projects shipped</div></div>
         <div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Technical presentations delivered</div></div>
         <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Industry simulations &amp; certifications</div></div>
         <div class="stat-box"><div class="stat-num">8+</div><div class="stat-label">Years playing tabla 🥁</div></div>
@@ -291,6 +310,16 @@
           <span class="stag">JavaScript</span><span class="stag">Node.js</span>
           <span class="stag">HTML / CSS</span><span class="stag">C</span>
           <span class="stag">Shell Scripting</span><span class="stag">Bash</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">☕</div>
+        <div class="skill-title">Java &amp; Backend</div>
+        <div class="skill-tags">
+          <span class="stag">Java</span><span class="stag">Spring Boot</span>
+          <span class="stag">Spring Security</span><span class="stag">REST APIs</span>
+          <span class="stag">Role-Based Access Control</span>
         </div>
       </div>
 
@@ -321,7 +350,7 @@
         <div class="skill-tags">
           <span class="stag">React.js</span>
           <span class="stag">OpenWeather API</span><span class="stag">Chat-Groq API</span>
-          <span class="stag">Responsive Design</span>
+          <span class="stag">Bootstrap</span><span class="stag">Responsive Design</span>
         </div>
       </div>
 
@@ -340,7 +369,7 @@
         <div class="skill-title">Tools &amp; DevOps</div>
         <div class="skill-tags">
           <span class="stag">Git</span><span class="stag">GitHub Actions</span>
-          <span class="stag">Jupyter Notebook</span>
+          <span class="stag">GitHub Pages</span><span class="stag">Jupyter Notebook</span>
           <span class="stag">VS Code</span><span class="stag">Linux</span>
         </div>
       </div>
@@ -417,6 +446,7 @@
           </div>
         </div>
         <div class="proj-visual" style="background:radial-gradient(circle at 20% 80%,rgba(167,139,250,.08) 0%,transparent 60%)">
+          <div class="proj-visual-bg"></div>
           <div class="proj-label">// React Data Dashboard</div>
           <div class="pipeline">
             <div class="pnode">API Call</div><div class="parrow">→</div>
@@ -432,6 +462,110 @@
         </div>
       </div>
 
+      <!-- Project 3 -->
+      <div class="proj-item fade-in">
+        <div class="proj-visual">
+          <div class="proj-visual-bg"></div>
+          <div class="proj-label">// Personal Portfolio &amp; CI/CD</div>
+          <div class="pipeline">
+            <div class="pnode">Push to main</div><div class="parrow">→</div>
+            <div class="pnode">GitHub Actions</div><div class="parrow">→</div>
+            <div class="pnode">Pages Artifact</div><div class="parrow">→</div>
+            <div class="pnode">Live Site</div>
+          </div>
+          <div class="tech-pills">
+            <span class="tpill">HTML/CSS</span>
+            <span class="tpill">GitHub Actions</span>
+            <span class="tpill">GitHub Pages</span>
+            <span class="tpill">CI/CD</span>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-num">03. Featured Project</div>
+          <h3 class="proj-title"><a href="https://harshdespande.github.io/portfolio1/" target="_blank">Personal Portfolio Website ↗</a></h3>
+          <div class="proj-desc">
+            A responsive personal portfolio site built from scratch and deployed with a fully automated
+            CI/CD pipeline using GitHub Actions — every push to main triggers a build and deploy to
+            GitHub Pages with zero manual steps.
+          </div>
+          <ul class="proj-hl">
+            <li>Automated deployment workflow using GitHub Actions on every push to main</li>
+            <li>Configured GitHub Pages via <code>configure-pages</code>, <code>upload-pages-artifact</code>, and <code>deploy-pages</code> actions</li>
+            <li>Set up least-privilege permissions (read contents, write pages, OIDC id-token)</li>
+            <li>Manual trigger support via <code>workflow_dispatch</code> for on-demand redeploys</li>
+          </ul>
+          <div class="proj-techs">
+            <span>HTML</span><span>·</span><span>CSS</span><span>·</span>
+            <span>GitHub Actions</span><span>·</span><span>GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="proj-item rev fade-in">
+        <div class="proj-info">
+          <div class="proj-num">04. Featured Project</div>
+          <h3 class="proj-title">Test Request Management System — Gabriel India Ltd. ↗</h3>
+          <div class="proj-desc">
+            A full-stack, role-based enterprise web application built for the R&amp;D department of
+            Gabriel India Ltd. to digitize and streamline the internal test request process, from
+            submission through review and approval.
+          </div>
+          <ul class="proj-hl">
+            <li>Secure, role-based authentication &amp; authorization using Spring Security</li>
+            <li>Backend REST APIs built with Spring Boot, integrated with MySQL for data persistence</li>
+            <li>Responsive front-end interface built with Bootstrap for a smooth user experience</li>
+            <li>Hands-on experience with enterprise application architecture &amp; database design</li>
+          </ul>
+          <div class="proj-techs">
+            <span>Java</span><span>·</span><span>Spring Boot</span><span>·</span>
+            <span>Spring Security</span><span>·</span><span>MySQL</span><span>·</span><span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="proj-visual" style="background:radial-gradient(circle at 20% 80%,rgba(245,158,11,.08) 0%,transparent 60%)">
+          <div class="proj-visual-bg"></div>
+          <div class="proj-label">// Enterprise R&amp;D Tool</div>
+          <div class="pipeline">
+            <div class="pnode">Request</div><div class="parrow">→</div>
+            <div class="pnode">Spring Security</div><div class="parrow">→</div>
+            <div class="pnode">MySQL</div><div class="parrow">→</div>
+            <div class="pnode">Dashboard</div>
+          </div>
+          <div class="tech-pills">
+            <span class="tpill" style="background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.3);color:#f59e0b">Java</span>
+            <span class="tpill" style="background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.3);color:#f59e0b">Spring Boot</span>
+            <span class="tpill" style="background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.3);color:#f59e0b">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="sec-tag">04. experience</div>
+    <h2 class="sec-title">Work <span class="ac">Experience</span></h2>
+    <div class="exp-timeline fade-in">
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-role">Developer Intern</div>
+          <div class="exp-date">2025 · 2–3 Months</div>
+        </div>
+        <div class="exp-company">Gabriel India Ltd. — R&amp;D Department</div>
+        <ul class="exp-hl">
+          <li>Developed and tested a full-stack Test Request Management System for the R&amp;D department to digitize the internal test request workflow</li>
+          <li>Built backend REST APIs using Java and Spring Boot, integrated with a MySQL database for data persistence</li>
+          <li>Implemented role-based authentication and authorization using Spring Security to manage access across user levels</li>
+          <li>Designed a responsive front-end interface with Bootstrap for a smooth, enterprise-grade user experience</li>
+          <li>Gained hands-on experience in backend development, database management, and building role-based enterprise applications</li>
+        </ul>
+        <div class="exp-techs">
+          <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>MySQL</span><span>Bootstrap</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -439,7 +573,7 @@
 
   <!-- PRESENTATIONS -->
   <section id="presentations">
-    <div class="sec-tag">04. talks &amp; presentations</div>
+    <div class="sec-tag">05. talks &amp; presentations</div>
     <h2 class="sec-title">Technical <span class="ac">Presentations</span></h2>
     <div class="pres-grid fade-in">
 
@@ -470,7 +604,7 @@
 
   <!-- EDUCATION -->
   <section id="education">
-    <div class="sec-tag">05. education &amp; certifications</div>
+    <div class="sec-tag">06. education &amp; certifications</div>
     <h2 class="sec-title">Education &amp; <span class="ac">Learning</span></h2>
     <div class="edu-grid fade-in">
 
@@ -520,7 +654,7 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="contact-inner fade-in">
-      <div class="sec-tag" style="justify-content:center">06. what's next</div>
+      <div class="sec-tag" style="justify-content:center">07. what's next</div>
       <h2 class="contact-title">Let's Work Together</h2>
       <p class="contact-desc">
         I'm actively seeking internship opportunities in Data Engineering, Data Analytics,
